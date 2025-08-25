@@ -1,4 +1,5 @@
-from flask import Flask
+from flask import Flask, render_template, request
+from werkzeug.middleware.proxy_fix import ProxyFix
 import os
 
 app = Flask(__name__)
